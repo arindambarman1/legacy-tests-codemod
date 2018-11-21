@@ -13,21 +13,6 @@ const {
 } = require('../../utils/function');
 const { getNotificationServiceFunctions } = require('../../utils/notifications');
 
-// module.exports = function transformer(file, api) {
-//   const j = getParser(api);
-
-//   return j(file.source)
-//     .find(j.Identifier)
-//     .forEach(path => {
-//       path.node.name = path.node.name
-//         .split('')
-//         .reverse()
-//         .join('');
-//     })
-//     .toSource();
-// }
-
-// Press ctrl+space for code completion
 module.exports = function transformer(file, api) {
   const j = getParser(api);
 
